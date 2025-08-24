@@ -1,31 +1,26 @@
-# Projeto: Cadastro de Territórios 🏰
+## 🛠️ Funcionalidades
 
-## 📖 Descrição
+### Nível 1 ✅
 
-Este projeto foi desenvolvido como parte do desafio de programação.  
-O objetivo é criar um sistema simples em **C** que permita cadastrar e exibir informações de **territórios** utilizando `structs`.
+-   Cadastro de territórios com:
+    -   Nome
+    -   Cor do exército
+    -   Número de tropas
+-   Exibição dos territórios cadastrados.
 
--   Exibir todas as informações cadastradas logo após o preenchimento.
+### Nível 2 ⚔️
 
----
-
-## 🛠️ Tecnologias utilizadas
-
--   Linguagem C
-
----
-
-## 📂 Estrutura do código
-
--   **Struct Territorio** → agrupa os dados `nome`, `cor` e `tropas`.
--   **Laço de repetição** → permite cadastrar os 5 territórios.
--   **Exibição formatada** → mostra os dados cadastrados ao final.
-
----
-
-## ▶️ Como executar o programa
-
-1. Compile o código:
-    ```bash
-    gcc main.c -o programa
-    ```
+-   **Alocação dinâmica** → o usuário define quantos territórios deseja cadastrar (usando `calloc`).
+-   **Simulação de ataque**:
+    -   O jogador escolhe um território atacante e um defensor.
+    -   Cada lado rola um dado (valor entre 1 e 6).
+    -   Se o atacante vencer:
+        -   O defensor muda de dono (recebe a cor do atacante).
+        -   O defensor recebe metade das tropas do atacante.
+        -   O atacante perde metade das tropas.
+    -   Se o defensor vencer:
+        -   O atacante perde **1 tropa**.
+-   **Validações**:
+    -   Não é possível atacar territórios da mesma cor.
+    -   Não é possível atacar com apenas 1 tropa.
+-   **Liberação de memória** → uso de `free` ao final do programa.
