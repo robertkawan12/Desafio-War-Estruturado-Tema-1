@@ -24,3 +24,21 @@
     -   Não é possível atacar territórios da mesma cor.
     -   Não é possível atacar com apenas 1 tropa.
 -   **Liberação de memória** → uso de `free` ao final do programa.
+
+### Nível 3 ✅
+
+Criação de vetor de missões (mín. 5).
+
+Sorteio de missão com atribuirMissao(char* destino, char* missoes[], int total).
+
+Missão armazenada dinamicamente com malloc por jogador.
+
+Verificação de missão com verificarMissao(char* missao, Territorio* mapa, int tamanho).
+
+Ataque com rand() (1–6), atualizando cor e tropas conforme regras.
+
+Ponteiros em todos os acessos (territórios, missões, jogadores).
+
+Modularização: funções claras (atribuirMissao, verificarMissao, exibirMissao, atacar, exibirMapa, liberarMemoria, main).
+
+Liberação de memória com free.
